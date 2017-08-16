@@ -21,18 +21,22 @@ export class toTopDirective {
     }
 
     public Scrollch() {
+        // console.log(document.body.scrollTop);
         this.scrolltop = document.body.scrollTop;
     }
     public Scrollto() {
-        console.log("dire:"+this.Target);
+        console.log("dire:" + this.Target);
         if (this.Target == 'Top') {
             this.timer = setInterval(() => {
-                document.body.scrollTop = document.body.scrollTop - 20;
-                if (document.body.scrollTop == 0) {
+                if (document.body.scrollTop === 0) {
                     clearInterval(this.timer);
                     document.body.scrollTop = this.scrolltop;
                 }
-            }, 1);
+                document.body.scrollTop = document.body.scrollTop - 20;
+                if (document.body.scrollTop <= 20) {
+                    document.body.scrollTop = 0;
+                }
+            }, 8);
         }
     }
 }

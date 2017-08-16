@@ -29,6 +29,6 @@ export const appRoutes=[
     },
     {
 		path:'**',//fallback router must in the last
-		loadChildren:'./app.module#AppModule'
+		loadChildren:'./home/home.module#HomeModule'
     }
 ];

@@ -15,7 +15,7 @@ export class ScrollCkDirective {
   private changeScroll() {
     this.scrolltop = document.body.scrollTop;
     // console.log(this.renderer.selectRootElement(this.el.nativeElement.querySelector('#ku')).offsetTop);
-    if (this.scrolltop >= 639 && this.scrolltop <= 780) {
+    if (this.scrolltop >= 300 && this.scrolltop <= 740) {
     //   console.log('kuangjia');
       this.renderer.setElementClass(this.el.nativeElement.querySelector('#kuangjia'), 'kuangjia1', true);
       this.renderer.setElementClass(this.el.nativeElement.querySelector('#kuangjia'), 'kuangjia2', false);

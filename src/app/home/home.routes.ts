@@ -10,4 +10,4 @@ export const homeRoutes = [
         path:'home',
         component:HomeComponent
     }
-];
+];    

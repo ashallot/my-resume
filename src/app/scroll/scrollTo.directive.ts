@@ -22,31 +22,34 @@ export class scrollToDirective {
 
   public Scrollch() {
     this.scrolltop = document.body.scrollTop;
+    console.log(this.scrolltop);
   }
   public Scrollto() {
     console.log('To:'+this.target);
     if (this.target == 'kuangjia') {
       this.timer = setInterval(() => {
-        document.body.scrollTop = document.body.scrollTop + 10;
-        if (document.body.scrollTop >= 710) {
+        if (document.body.scrollTop >= 570) {
+          console.log('in-if'+this.scrolltop);
           clearInterval(this.timer);
           document.body.scrollTop = this.scrolltop;
         }
-      }, 1);
+        document.body.scrollTop = document.body.scrollTop + 10;
+        // console.log('out-if:'+this.scrolltop);
+      }, 30);
     } else if (this.target == 'fengge') {
       this.timer = setInterval(() => {
         document.body.scrollTop = document.body.scrollTop + 19;
         if (document.body.scrollTop >= 1330) {
           clearInterval(this.timer);
         }
-      }, 1);
+      }, 8);
     } else if (this.target == 'ku') {
       this.timer = setInterval(() => {
         document.body.scrollTop = document.body.scrollTop + 28.1;
-        if (document.body.scrollTop >= 2000) {
+        if (document.body.scrollTop >= 1750) {
           clearInterval(this.timer);
         }
-      }, 1);
+      }, 8);
     }
   }
 }

@@ -17,12 +17,11 @@ export class AboutComponent implements OnInit {
   target:any;
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   public goto(loc: string): void {
-    console.log('com:'+loc);
-    this.target = loc;
+    // console.log('com:'+loc);
+    // this.target = loc;
     // window.location.hash = loc;
   }
 

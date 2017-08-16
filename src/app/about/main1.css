@@ -2,7 +2,7 @@
 
 .kuangjia1 img {
     transition: all 1s;
-    transform: rotateZ(360deg);
+    transform: rotateX(0deg);
 }
 
 .kuangjia2 {
@@ -12,5 +12,5 @@
 
 .kuangjia2 img {
     transition: all 1s;
-    transform: rotateZ(-360deg);
+    transform: rotateX(90deg);
 }

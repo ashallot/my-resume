@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { AboutComponent } from './about.component';
 import { aboutRoutes } from "./about.routes";
 import { ScrollCkDirective } from "../scroll/scrollCheck.directive";
-import { scrollToDirective } from "../scroll/scrollTo.directive";
+// import { scrollToDirective } from "../scroll/scrollTo.directive";
 
 @NgModule({
   imports: [
@@ -14,7 +14,7 @@ import { scrollToDirective } from "../scroll/scrollTo.directive";
   ],
   declarations: [
     AboutComponent,
-    scrollToDirective,
+    // scrollToDirective,
     ScrollCkDirective
   ]
 })
