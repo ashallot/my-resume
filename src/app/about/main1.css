@@ -1,0 +1,16 @@
+.kuangjia1 {}
+
+.kuangjia1 img {
+    transition: all 1s;
+    transform: rotateZ(360deg);
+}
+
+.kuangjia2 {
+    /* transition: all 1s;
+    margin-left: 0px; */
+}
+
+.kuangjia2 img {
+    transition: all 1s;
+    transform: rotateZ(-360deg);
+}

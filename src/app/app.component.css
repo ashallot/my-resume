@@ -1,0 +1,76 @@
+.headback {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar {
+    width: 100%;
+    height: 56px;
+    background-color: #7b7b7b;
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+}
+
+.nav {
+    padding: 8px 16px 8px 16px;
+}
+
+.navbtn {}
+
+.navbtnright {
+    float: right;
+}
+
+.navfont {
+    color: #f0f0f0;
+}
+
+.headback .navbar .nav a {
+    border-radius: 0px;
+    transition: all 0.5s;
+}
+
+.headback .navbar .nav a:hover {
+    background-color: rgba(0, 0, 0, .12);
+    border-radius: 20px;
+}
+
+.active {
+    font-size: 16px;
+}
+
+
+/*浮动窗口*/
+
+#gotop {
+    display: block;
+}
+
+.gotop1 {
+    position: fixed;
+    bottom: 30%;
+    right: 0;
+    margin-left: 560px;
+    margin-bottom: -160px;
+    z-index: 99;
+}
+
+.gotop1 div {
+    margin: 0;
+    padding: 0;
+}
+
+.gotop2 .box .a {
+    cursor: pointer;
+}
+
+.gotop2 .box .a span {
+    color: white;
+    padding-left: 13px;
+    margin-top: -15px;
+    position: absolute;
+}

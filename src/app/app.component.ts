@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  target: any;
+
+
+  public goTop(u:string) {
+    // console.log(u);
+    this.target = u;
+  }
 }

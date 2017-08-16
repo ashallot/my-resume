@@ -1,0 +1,61 @@
+<div id="about" [@fadeIn]="'active'" class="container" scrollCheck [scrollTo]='target'>
+    <div class="main1">
+        <div (click)='goto("kuangjia")'>
+            <span class="title1">主要框架</span>
+            <span class="detail1">angular2</span>
+        </div>
+        <div (click)='goto("fengge")'>
+            <span class="title2">UI风格</span>
+            <span class="detail2">Material Design</span>
+        </div>
+        <div (click)='goto("ku")'>
+            <span class="title3">UI组件库</span>
+            <span class="detail3">Angular Material</span>
+        </div>
+    </div>
+    <div class="main2" id='kuangjia'>
+        <img src="assets/img/angular.svg" alt="Angular"><br>
+        <span class="detail">一套框架 移动桌面多平台使用</span>
+        <ul class="sgmk">
+            <li class="zmk">
+                <span (mouseover)='zover(1)' (mouseleave)='zleave()'>跨平台</span>
+                <ul *ngIf="z1State" [@zState]="z1State">
+                    <li>渐进式的WebApp</li>
+                    <li>原生应用</li>
+                    <li>桌面应用</li>
+                </ul>
+            </li>
+            <li class="zmk">
+                <span (mouseover)='zover(2)' (mouseleave)='zleave()'>速度&性能</span>
+                <ul *ngIf="z2State" [@zState]="z2State">
+                    <li>代码生成</li>
+                    <li>通用</li>
+                    <li>代码拆分</li>
+                </ul>
+            </li>
+            <li class="zmk">
+                <span (mouseover)='zover(3)' (mouseleave)='zleave()'>生产力</span>
+                <ul *ngIf="z3State" [@zState]="z3State">
+                    <li>模版</li>
+                    <li>Angular命令行工具</li>
+                    <li>IDE</li>
+                </ul>
+            </li>
+            <li class="zmk">
+                <span (mouseover)='zover(4)' (mouseleave)='zleave()'>完整性</span>
+                <ul *ngIf="z4State" [@zState]="z4State">
+                    <li>测试</li>
+                    <li>动画</li>
+                    <li>可访问性</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="main3" id='fengge'>
+        <p>fengge</p>
+    </div>
+    <div class="main4" id='ku'>
+        <p>ku</p>
+    </div>
+
+</div>
