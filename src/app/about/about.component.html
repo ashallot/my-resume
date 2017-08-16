@@ -1,16 +1,22 @@
-<div id="about" [@fadeIn]="'active'" class="container" scrollCheck [scrollTo]='target'>
+<div id="about" [@fadeIn]="'active'" class="container" scrollCheck>
     <div class="main1">
-        <div (click)='goto("kuangjia")'>
-            <span class="title1">主要框架</span>
-            <span class="detail1">angular2</span>
+        <div [scrollTo]='target'>
+            <div (click)='goto("kuangjia")'>
+                <span class="title1">主要框架</span>
+                <span class="detail1">angular2</span>
+            </div>
         </div>
-        <div (click)='goto("fengge")'>
-            <span class="title2">UI风格</span>
-            <span class="detail2">Material Design</span>
+        <div [scrollTo]='target'>
+            <div (click)='goto("fengge")'>
+                <span class="title2">UI风格</span>
+                <span class="detail2">Material Design</span>
+            </div>
         </div>
-        <div (click)='goto("ku")'>
-            <span class="title3">UI组件库</span>
-            <span class="detail3">Angular Material</span>
+        <div [scrollTo]='target'>
+            <div (click)='goto("ku")'>
+                <span class="title3">UI组件库</span>
+                <span class="detail3">Angular Material</span>
+            </div>
         </div>
     </div>
     <div class="main2" id='kuangjia'>
