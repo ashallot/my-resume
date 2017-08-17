@@ -6,7 +6,8 @@ import { Directive, ElementRef, Renderer, Input, HostListener } from '@angular/c
 })
 // Directive class
 export class toTopDirective {
-    scrolltop: any;
+    scrolltopA: any;//chrome
+    scrolltopB:any;//fire
 
     timer: any;
     constructor(private el: ElementRef, private renderer: Renderer) { }
@@ -23,7 +24,8 @@ export class toTopDirective {
     public Scrollch(event) {
         // console.log(document.body.scrollTop); 适配Chrome
         // console.log(document.documentElement.scrollTop);  适配firefox
-        this.scrolltop = document.body.scrollTop;
+        this.scrolltopA = document.body.scrollTop;
+        this.scrolltopB = document.documentElement.scrollTop;
     }
     public Scrollto(event) {
         console.log("dire:" + this.Target);
@@ -31,7 +33,7 @@ export class toTopDirective {
             this.timer = setInterval(() => {
                 if (document.body.scrollTop === 0) {
                     clearInterval(this.timer);
-                    document.body.scrollTop = this.scrolltop;
+                    document.body.scrollTop = this.scrolltopA;
                 }
                 document.body.scrollTop = document.body.scrollTop - 20;
                 if (document.body.scrollTop <= 20) {
@@ -42,7 +44,7 @@ export class toTopDirective {
             this.timer = setInterval(() => {
                 if (document.documentElement.scrollTop === 0) {
                     clearInterval(this.timer);
-                    document.documentElement.scrollTop = this.scrolltop;
+                    document.documentElement.scrollTop = this.scrolltopB;
                 }
                 document.documentElement.scrollTop = document.documentElement.scrollTop - 60;
                 if (document.documentElement.scrollTop <= 60) {

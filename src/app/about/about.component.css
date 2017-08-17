@@ -1,3 +1,5 @@
+@import './main1.css';
+@import './floatWin.css';
 .container {
     /* background-color: #9d9d9d; */
     /* min-height: 582px; */
@@ -179,7 +181,6 @@
     filter: Alpha(opacity=1); */
 }
 
-@import './main1.css';
 
 /*  main3  */
 

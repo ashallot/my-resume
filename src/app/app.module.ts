@@ -13,12 +13,10 @@ import { appRoutes } from "./app.routes";
 import { WayModule } from "./way/way.module";
 import { AchievementModule } from "./achievement/achievement.module";
 import { AboutModule } from "./about/about.module";
-import { toTopDirective } from "./scroll/toTop.directive";
 
 @NgModule({
   declarations: [
-    AppComponent,
-    toTopDirective
+    AppComponent
   ],
   imports: [
     RouterModule,

@@ -9,12 +9,13 @@ import { fadeIn } from "../animations/fade-in";
   animations: [fadeIn, zState]
 })
 export class AboutComponent implements OnInit {
-  z1State: any;
-  z2State: any;
-  z3State: any;
-  z4State: any;
+  z1State: string;
+  z2State: string;
+  z3State: string;
+  z4State: string;
 
-  target:any;
+  target:string;
+  duration:string;
   constructor() { }
 
   ngOnInit() {}
@@ -41,4 +42,9 @@ export class AboutComponent implements OnInit {
     this.z3State = '';
     this.z4State = '';
   }
+
+  public godur(dur){
+    this.duration = dur;
+  }
+
 }

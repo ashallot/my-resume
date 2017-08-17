@@ -1,0 +1,28 @@
+#gotop {
+    display: block;
+}
+
+.gotop1 {
+    position: fixed;
+    bottom: 30%;
+    right: 0;
+    margin-left: 560px;
+    margin-bottom: -160px;
+    z-index: 99;
+}
+
+.gotop1 div {
+    margin: 0;
+    padding: 0;
+}
+
+.gotop2 .box .a {
+    cursor: pointer;
+}
+
+.gotop2 .box .a span {
+    color: white;
+    padding-left: 13px;
+    margin-top: -15px;
+    position: absolute;
+}

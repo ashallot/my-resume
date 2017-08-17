@@ -5,6 +5,7 @@ import { AboutComponent } from './about.component';
 import { aboutRoutes } from "./about.routes";
 import { ScrollCkDirective } from "../scroll/scrollCheck.directive";
 import { disWheelDirective } from "../scroll/disablewheel.directive";
+import { scrollDurDirective } from "../scroll/scrollDur.directive";
 // import { scrollToDirective } from "../scroll/scrollTo.directive";
 
 @NgModule({
@@ -17,7 +18,8 @@ import { disWheelDirective } from "../scroll/disablewheel.directive";
     AboutComponent,
     // scrollToDirective,
     ScrollCkDirective,
-    disWheelDirective
+    disWheelDirective,
+    scrollDurDirective
   ]
 })
 export class AboutModule { }
